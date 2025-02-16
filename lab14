@@ -1,5 +1,12 @@
 from art import *
-art_1 = art ("coffee")
-tprint("art", font="block", chr_ignore=True)
-print(art_1)
-line(length=15, height=2, char="*")
+from colorama import Fore, Back, Style
+
+block =  text2art("BELIEVE AND ACHEIVE", font="block", chr_ignore=True)
+sub = text2art("HELLO", font="sub-zero")
+
+bon = text2art("TUWAIQ" , font="rnd=large")
+print(Fore.RED + block)
+print(Style.RESET_ALL)
+print(Back.WHITE + sub)
+print(Style.RESET_ALL)
+print(Style.DIM + Back.GREEN + bon)
