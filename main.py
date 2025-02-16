@@ -9,10 +9,13 @@ Use colorama to color the text in the terminal.
 '''
 from art import *
 from colorama import Fore,Back,Style
+
 Art= text2art("BELIEVE AND ACHEIVE", font='block',chr_ignore=True)
 print (Art)
+
 Art2=text2art("HELLO", font='sub-zero', chr_ignore=True)
 print (Art2)
+
 Art3=text2art("WE are \nusing \nthe Art\nModel with \nColorama",font='block', chr_ignore=True)
 print (Fore.BLACK+Back.GREEN+Art3)
 
